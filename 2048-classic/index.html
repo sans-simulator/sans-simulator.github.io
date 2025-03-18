@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>2048 Classic Game - Play free Online</title>
+    <link rel="shortcut icon" href="/2048-classic/assets/img/logo.svg?v1.4" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!">
+    <meta name="keywords" content="2048, 2048 game, 2048 online, 2048 game online, 2048 google game, 2048 tile, google 2048 game online, 2468 game, stacktris, 20 48, block 2048, 2084 game, 2048 game download, 2480 game, 2048 original, 2408 game, 2046 game, 2048 by gabriele cirulli, 2048 for free, 2048 free game online, 2048 free online, 2048 play online free, merge block 2048 puzzle, 2048 chrome, 2048 cirulli">
+    <link href="/2048-classic/assets/css/main.min7373.css?v1.4" rel="stylesheet">
+
+    <meta property="og:title" content="2048 Classic Game - Play Online">
+    <meta property="og:description" content="Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/2048-classic/">
+    <meta property="og:site_name" content="2048 Classic Game - Play Online">
+    <meta property="og:width" content="1024">
+    <meta property="og:height" content="1024">
+    <meta property="og:image" content="/2048-classic/assets/img/2048-game.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="2048 Classic Game - Play Online" />
+    <meta name="twitter:description" content="Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!" />
+    <meta name="twitter:image" content="/2048-classic/assets/img/2048-game.png">
+
+    <meta name="csrf-token" content="PQY3xz7Iytz43vLM6DgMo8zI2Wih9YEjjSVnUIcH">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/2048-classic/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2048-classic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2048-classic/favicon-16x16.png">
+    <link rel="manifest" href="/2048-classic/site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#e6b317">
+    <meta name="msapplication-TileColor" content="#e6b317">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/2048-classic/assets/css/20487373.css?v1.4" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "2048 Classic Game",
+  "url": "/2048-classic",
+  "image": "h/2048-classic/apple-touch-icon.png",
+  "description": "Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!",
+  "author": {
+    "@type": "Person",
+    "name": "Jon",
+    "sameAs": "/2048-classic/o"
+  },
+  "applicationCategory": "Game",
+  "operatingSystem": "Web"
+}
+</script>
+	
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "brand": "",
+    "name": "22048 Classic Game - Play Online",
+    "description": "Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!",
+    "category": "Productivity",
+    "image": "/2048-classic/assets/img/2048-game.png",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "worstRating": "1",
+        "bestRating": "5"
+                    ,"ratingValue": "4.2",
+        "ratingCount": "134675"
+                }
+    }
+</script>
+
+</head>
+<body>
+    
+    <section class="section section--main">
+        <div class="container no-pading">
+
+            <style>
+    .score-container:after {
+        content: "Score" !important;
+    }
+
+    .best-container:after {
+        content: "Best" !important;
+    }
+</style>
+
+<script>
+    window.translations = {
+        win: 'You win!',
+        game_over: 'Game over!'
+    };
+</script>
+
+  <div class="gameplay-container">
+    <div class="above-game">
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+      <a class="restart-button">New game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+  </div>        </div>
+
+	    <div style="text-align: center; padding: 20px;">
+    <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 15px; color: #333;">2048 Classic</h1>
+        </div> 
+        
+<!-- description -->        
+
+<div style="text-align: center; padding: 20px;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px; color: #333;">Play More Games</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;">
+        <a href="/" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #009688, #004D40); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Sans Simulator
+            </button>
+        </a>
+
+        <a href="/block-blast" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #4CAF50, #2E7D32); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Block Blast
+            </button>
+        </a>
+
+        <a href="/2048-cupcakes" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #2196F3, #1565C0); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Cupcakes
+            </button>
+        </a>
+
+        <a href="/2028-taylor-swift" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #f44336, #b71c1c); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2028 Taylor Swift
+            </button>
+        </a>
+
+        <a href="/2048-classic" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #ff9800, #e65100); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Classic
+            </button>
+        </a>
+
+        <a href="/doge-2048" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #9C27B0, #6A1B9A); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Doge 2048
+            </button>
+        </a>
+    </div>
+</div>
+        
+
+    <section class="section section--top">
+        <div class="container">
+            <div class="headline">
+                <h2 class="headline__text">Use the arrow keys (or W, A, S, D) to move the tiles. You can also swipe on a touchscreen. When two matching tiles touch, they merge into one with double the number. Keep going until you reach 2048!</h2>
+            </div>
+        </div>
+    </section>
+            
+
+ <section class="section section--rate">
+    <div class="container">
+        <div class="rate">
+            <div class="rate__title">Rate 2048 Classic:</div>
+            <div class="rate__stars">
+                <fieldset class="starability-basic" data-section="cupcakes">
+                    <input class="input-no-rate" id="no-rate" type="radio" name="rating" value="0" checked="" aria-label="No rating" autocomplete="off"   disabled >
+                    <input id="first-rate1" type="radio" name="rating" value="1" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate1" title="Awful"><span class="hint__hidden">Awful</span></label>
+                    <input id="first-rate2" type="radio" name="rating" value="2" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate2" title="Poor"><span class="hint__hidden">Poor</span></label>
+                    <input id="first-rate3" type="radio" name="rating" value="3" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate3" title="Average"><span class="hint__hidden">Average</span></label>
+                    <input id="first-rate4" type="radio" name="rating" value="4" autocomplete="off"  checked   disabled >
+                    <label class="hint" for="first-rate4" title="Good"><span class="hint__hidden">Good</span></label>
+                    <input id="first-rate5" type="radio" name="rating" value="5" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate5" title="Excellent"><span class="hint__hidden">Excellent</span></label>
+                </fieldset>
+            </div>
+            <div class="rate__numbers"><b>4.9</b> / 5</div>
+            <div class="rate__votes"><span>134,675</span> votes</div>
+        </div>  
+    </div>
+</section>
+
+    <div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a class="footer__logo" href="/">
+                    <img src="/2048-classic/assets/img/logo7373.svg?v1.4" alt="2048 Game - Play Online">
+                </a>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copir"><a href="/">Sans Simulator</a> @2025 All rights reserved</div>
+                <ul class="footer__links">
+                    <li><a href="mailto:contactmu97@gmail.com?subject=2048">Feedback</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+  <script src="/2048-classic/assets/js/libs.min7373.js?v1.4"></script>
+  <script src="/2048-classic/assets/js/main.min7373.js?v1.4"></script>
+  <script src="/2048-classic/js/bind_polyfill1b26.js?v2"></script>
+  <script src="/2048-classic/js/classlist_polyfill1b26.js?v2"></script>
+  <script src="/2048-classic/js/animframe_polyfill1b26.js?v2"></script>
+  <script src="/2048-classic/js/keyboard_input_manager1b26.js?v2"></script>
+  <script src="/2048-classic/js/html_actuator1b26.js?v2"></script>
+  <script src="/2048-classic/js/grid1b26.js?v2"></script>
+  <script src="/2048-classic/js/tile1b26.js?v2"></script>
+  <script src="/2048-classic/js/local_storage_manager1b26.js?v2"></script>
+  <script src="/2048-classic/js/game_manager1b26.js?v2"></script>
+  <script src="/2048-classic/js/application1b26.js?v2"></script>
+</body>
+</html>

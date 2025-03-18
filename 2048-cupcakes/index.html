@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>2048 Cupcakes Game – Play Online for Free & Have Fun!</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content=" Play 2048 Cupcakes online for free! Merge tasty cupcakes, challenge yourself, and see how far you can go—no downloads needed!">
+    <meta name="keywords" content="2048, game, score, play, puzzle, cupcake">
+    <link href="/2048-cupcakes/assets/css/main.min7373.css?v1.4" rel="stylesheet">
+
+    <meta property="og:title" content="2048 Cupcakes Game – Play Online for Free & Have Fun!">
+    <meta property="og:description" content="Play 2048 Cupcakes online for free! Merge tasty cupcakes, challenge yourself, and see how far you can go—no downloads needed!">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:site_name" content="2048 Cupcakes Game – Play Online for Free & Have Fun!">
+    <meta property="og:width" content="1024">
+    <meta property="og:height" content="1024">
+    <meta property="og:image" content="favicon.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="2048 Cupcakes Game – Play Online for Free & Have Fun!" />
+    <meta name="twitter:description" content="Play 2048 Cupcakes online for free! Merge tasty cupcakes, challenge yourself, and see how far you can go—no downloads needed!" />
+    <meta name="twitter:image" content="/2048-cupcakes/favicon.png">
+
+    <meta name="csrf-token" content="PQY3xz7Iytz43vLM6DgMo8zI2Wih9YEjjSVnUIcH">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/2048-cupcakes/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2048-cupcakes/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2048-cupcakes/favicon.png">
+    <link rel="manifest" href="/2048-cupcakes//site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#e6b317">
+    <meta name="msapplication-TileColor" content="#e6b317">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/2048-cupcakes/assets/css/cupcakes/20487373.css?v1.4" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "2048 Cupcakes Game",
+  "url": "/2048-cupcakes",
+  "image": "/2048-cupcakes/favicon.png",
+  "description": "Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!",
+  "author": {
+    "@type": "Person",
+    "name": "Jon",
+    "sameAs": "2048-cupcakes/"
+  },
+  "applicationCategory": "Game",
+  "operatingSystem": "Web"
+}
+</script>	
+    
+    <script type="application/ld+json">
+   {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "brand": "https://2048.gg",
+    "name": "2048 Cupcakes Game – Play Online for Free & Have Fun!",
+    "description": "Play 2048 Cupcakes online for free! Merge tasty cupcakes, challenge yourself, and see how far you can go—no downloads needed!",
+    "category": "Productivity",
+    "image": "/2048-cupcakes/assets/img/2048-game.png",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "worstRating": "1",
+        "bestRating": "5"
+                    ,"ratingValue": "4.9",
+        "ratingCount": "264727"
+                }
+    }
+</script>
+
+
+</head>
+<body>
+
+    <section class="section section--main">
+        <div class="container no-pading">
+
+
+
+<style>
+    .score-container:after {
+        content: "Score" !important;
+    }
+
+    .best-container:after {
+        content: "Best" !important;
+    }
+</style>
+
+<script>
+    window.translations = {
+        win: 'You win!',
+        game_over: 'Game over!'
+    };
+</script>
+
+  <div class="gameplay-container">
+    <div class="heading">
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+      <a class="restart-button">Play Again</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="container" style="padding:40px 0 25px"></div>   
+    
+    </section>
+
+	<div style="text-align: center; padding: 20px;">
+    <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 15px; color: #333;">2048 Cupcakes</h1>
+</div>
+    <section class="section section--top">
+        <div class="container">
+            <div class="headline">
+                <h2 class="headline__text">This is Cupcakes version of the 2048 game. Use your arrow keys to move the tiles. When two of the same cupcake tiles touch, they merge into one!</h2>
+            </div>
+        </div>
+    </section>
+    
+<!-- description -->        
+
+<div style="text-align: center; padding: 20px;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px; color: #333;">🎮 Play More Games 🎮</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;">
+        <a href="/" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #009688, #004D40); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Sans Simulator
+            </button>
+        </a>
+
+        <a href="/block-blast" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #4CAF50, #2E7D32); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Block Blast
+            </button>
+        </a>
+
+        <a href="/2048-cupcakes" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #2196F3, #1565C0); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Cupcakes
+            </button>
+        </a>
+
+        <a href="/2028-taylor-swift" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #f44336, #b71c1c); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2028 Taylor Swift
+            </button>
+        </a>
+
+        <a href="/2048-classic" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #ff9800, #e65100); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Classic
+            </button>
+        </a>
+
+        <a href="/doge-2048" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #9C27B0, #6A1B9A); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Doge 2048
+            </button>
+        </a>
+    </div>
+</div>
+     
+    <section class="section section--rate">
+    <div class="container">
+        <div class="rate">
+            <div class="rate__title">Rate 2048 Cupcake:</div>
+            <div class="rate__stars">
+                <fieldset class="starability-basic" data-section="cupcakes">
+                    <input class="input-no-rate" id="no-rate" type="radio" name="rating" value="0" checked="" aria-label="No rating" autocomplete="off"   disabled >
+                    <input id="first-rate1" type="radio" name="rating" value="1" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate1" title="Awful"><span class="hint__hidden">Awful</span></label>
+                    <input id="first-rate2" type="radio" name="rating" value="2" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate2" title="Poor"><span class="hint__hidden">Poor</span></label>
+                    <input id="first-rate3" type="radio" name="rating" value="3" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate3" title="Average"><span class="hint__hidden">Average</span></label>
+                    <input id="first-rate4" type="radio" name="rating" value="4" autocomplete="off"  checked   disabled >
+                    <label class="hint" for="first-rate4" title="Good"><span class="hint__hidden">Good</span></label>
+                    <input id="first-rate5" type="radio" name="rating" value="5" autocomplete="off"   disabled >
+                    <label class="hint" for="first-rate5" title="Excellent"><span class="hint__hidden">Excellent</span></label>
+                </fieldset>
+            </div>
+            <div class="rate__numbers"><b>4.9</b> / 5</div>
+            <div class="rate__votes"><span>4,64,727</span> votes</div>
+        </div>  
+    </div>
+</section>
+
+<div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a class="footer__logo" href="/2048-cupcakes/">
+                    <img src="/2048-cupcakes/assets/img/logo7373.svg?v1.4" alt="2048 Cupcakes - Play Online">
+                </a>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copir"><a href="/">Sans Simulator</a> @2025 All rights reserved</div>
+                <ul class="footer__links">
+                    <li><a href="mailto:contactmu97@gmail.com?subject=2048 Cupcake">Feedback</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="assets/js/libs.min7373.js?v1.4"></script>
+<script src="assets/js/main.min7373.js?v1.4"></script>
+
+  <script src="/2048-cupcakes/js/cupcakes/bind_polyfill1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/classlist_polyfill1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/animframe_polyfill1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/keyboard_input_manager1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/html_actuator1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/grid1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/tile1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/local_storage_manager1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/game_manager1b26.js?v2"></script>
+  <script src="/2048-cupcakes/js/cupcakes/application1b26.js?v2"></script>
+</body>
+</html>

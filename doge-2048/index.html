@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Doge 2048</title>
+
+  <link href="/doge-2048/style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/doge-2048/img/favicon.png">
+  <link rel="apple-touch-icon" href="/doge-2048/img/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta property="og:title" content="Doge 2048" />
+  <meta property="og:url" content="/doge-2048/" />
+  <meta property="og:description" content="Play Doge 2048 online! Merge Doge tiles to reach the highest score in this fun puzzle game." />
+  <meta property="og:image" content="/doge-2048/meta/doge-600.png">
+  <meta property="og:image:type" content="/doge-2048/image/png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Doge 2048",
+  "url": "/doge-2048",
+  "image": "/doge-2048/img/favicon.png",
+  "description": "Play Doge 2048 online! Merge Doge tiles to reach the highest score in this fun puzzle game.",
+  "author": {
+    "@type": "Person",
+    "name": "Jon",
+    "sameAs": "/doge-2048"
+  },
+  "applicationCategory": "Game",
+  "operatingSystem": "Web"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "brand": "/doge-2048",
+    "name": "Google Block Breaker - Play free Block Breaking Game Online!",
+    "description": "Play Doge 2048 online! Merge Doge tiles to reach the highest score in this fun puzzle game.",
+    "image": "/doge-2048/img/favicon.png",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "worstRating": "1",
+        "bestRating": "5"
+                    ,"ratingValue": "4.9",
+        "ratingCount": "3211300"
+                }
+    }
+</script>	
+
+	
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">DOGE<span style="color:red">2</span><span style="color:#00FF00">0</span><span style="color:blue">4</span><span style="color:#00FFFF">8</span>
+      </h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="doge-says">
+        <p></p>
+      </div>
+      <div class="info">
+
+        <!-- <div class="hide-info"><a>HIDE</a></div> -->
+       <p> More Game</p>
+       <p>2048 Cupcakes<a href="/" target="_blank">Click here</a></p>
+       <p>2048<a href="/" target="_blank">Click here</a></p>
+       <p>2028 Taylor Swift<a href="/" target="_blank">Click here</a></p>
+       <p>Unlock all 11 doges to win!</p>       
+      </div>
+      
+      
+      <div class="key">
+        <!-- <div class="hide-key"><a>HIDE</a></div> -->
+       <h1>Key:</h1>
+       <p>2- <img src="/doge-2048/img/212/doge-wink-212.gif" alt="2" width="60" height="60"> 4- <img src="/doge-2048/img/212/doge-shake-space-212.gif" alt="4" width="60" height="60"> 8- <img src="/doge-2048/img/212/doge-peepers-212.gif" alt="8" width="60" height="60"> </p>
+       <p>16- <img src="/doge-2048/img/212/doge-prizza-212.gif" alt="16" width="60" height="60"> 32- <img src="/doge-2048/img/212/doge-hat-212.gif" alt="32" width="60" height="60"> 64- <img src="/doge-2048/img/212/doge-gradient-212.gif" alt="64" width="60" height="60"></p>
+       <p>128- <img src="/doge-2048/img/212/doge-fat-212.gif" alt="128" width="60" height="60"> 256- <img src="/doge-2048/img/212/doge-rainbow-212.gif" alt="128" width="60" height="60"> 512- <img src="/doge-2048/img/212/doge-sunglasses-212.gif" alt="512" width="60" height="60"> </p>
+       <p>1024- <img src="/doge-2048/img/212/doge-derp-212.gif" alt="1024" width="60" height="60"> 2048- <img src="/doge-2048/img/212/doge-shake-212.gif" alt="2048" width="60" height="60"> </p>
+      </div>
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <p class="game-explanation">Use your arrow keys or swipe to combine similar Doges and score points!</p>
+    <div class="info-container">
+      <a class="show-info">INFO</a>
+    </div>
+    <div class="key-container">
+      <a class="show-key">BLOCKS</a>
+    </div>
+  </div>
+  
+<!-- description -->        
+
+<div style="text-align: center; padding: 20px;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px; color: #333;">Play More Games</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px;">
+        <a href="/" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #009688, #004D40); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Sans Simulator
+            </button>
+        </a>
+
+        <a href="/block-blast" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #4CAF50, #2E7D32); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Block Blast
+            </button>
+        </a>
+
+        <a href="/2048-cupcakes" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #2196F3, #1565C0); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Cupcakes
+            </button>
+        </a>
+
+        <a href="/2028-taylor-swift" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #f44336, #b71c1c); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2028 Taylor Swift
+            </button>
+        </a>
+
+        <a href="/2048-classic" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #ff9800, #e65100); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                2048 Classic
+            </button>
+        </a>
+
+        <a href="/doge-2048" target="_blank" style="text-decoration: none;">
+            <button style="background: linear-gradient(45deg, #9C27B0, #6A1B9A); border: none; color: white; padding: 12px 24px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.4s; width: 100%; max-width: 250px;"
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0px 4px 15px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                Doge 2048
+            </button>
+        </a>
+    </div>
+</div>
+
+  <script src="/doge-2048/js/bind_polyfill.js"></script>
+  <script src="/doge-2048/js/classlist_polyfill.js"></script>
+  <script src="/doge-2048/js/animframe_polyfill.js"></script>
+  <script src="/doge-2048/js/keyboard_input_manager.js"></script>
+  <script src="/doge-2048/js/html_actuator.js"></script>
+  <script src="/doge-2048/js/grid.js"></script>
+  <script src="/doge-2048/js/tile.js"></script>
+  <script src="/doge-2048/js/local_score_manager.js"></script>
+  <script src="/doge-2048/js/game_manager.js"></script>
+  <script src="/doge-2048/js/application.js"></script>
+
+</html>
