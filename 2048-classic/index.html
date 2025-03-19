@@ -23,7 +23,7 @@
     <meta name="twitter:title" content="2048 Classic Game - Play Online" />
     <meta name="twitter:description" content="Play the 2048 Classic game online! Use your keyboard arrow keys or touch controls on mobile to move the tiles and win the game!" />
     <meta name="twitter:image" content="/2048-classic/assets/img/2048-game.png">
-
+    <script src="/js/protection.js"></script>
     <meta name="csrf-token" content="PQY3xz7Iytz43vLM6DgMo8zI2Wih9YEjjSVnUIcH">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/2048-classic/apple-touch-icon.png">
@@ -72,7 +72,15 @@
                 }
     }
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5MM2NP0FB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-J5MM2NP0FB');
+</script>
 </head>
 <body>
     

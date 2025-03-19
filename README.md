@@ -1,6 +1,6 @@
-# Google Block Breaker Game
+# Sans Simulator
 
-Welcome to **Google Block Breaker**! Experience an exciting online arcade-style block-breaking game where you control a paddle to keep the ball in play and smash bricks for points.
+Welcome to **Sans Simulator online also play as bad time Simulator**! Play Sans Simulator online for free! Battle as or against Sans in an epic fight inspired by Undertale. Dodge attacks, unleash powerful moves, and test your skills. Easy to play, but hard to master can you survive?
 
 ## 📑 Table of Contents
 - [🚀 Play Now](#-play-now)
@@ -16,7 +16,7 @@ Welcome to **Google Block Breaker**! Experience an exciting online arcade-style 
 
 ## 🚀 Play Now
 Start playing instantly:  
-🔗 [Click here to play Google Block Breaker](https://google-blockbreaker.github.io/) 👈
+🔗 [Click here to play Sans Simulator](https://sans-simulator.github.io/) 👈
 
 ---
 
@@ -29,7 +29,7 @@ Start playing instantly:
 ---
 
 ## 🎮 How to Play
-Control the paddle using your **mouse** or **arrow keys** to keep the ball in play. Your goal is to break all the blocks above by bouncing the ball off the paddle. Complete all blocks to advance to the next level. Avoid letting the ball fall below the paddle to prevent losing lives.
+Use your keyboard or touch controls to move, jump, and attack. Dodge white attacks by moving and stay still for blue ones. Time your moves to win!
 
 ---
 
@@ -52,8 +52,8 @@ This project is released under the **MIT License**.
 ## 📩 Contact
 For inquiries, suggestions, or contributions, reach out:
 - 📧 Email: contactmu97@gmail.com  
-- 🌐 Website: [Block Breaker](https://google-blockbreaker.github.io/)
+- 🌐 Website: [Block Breaker](https://sans-simulator.github.io/)
 - Also play [Doodle Cricket](https://doodlecricket.org/)
 
-🚀 Dive into the action and enjoy [Google Block Breaker](https://google-blockbreaker.github.io/)! 🎉
+🚀 Dive into the action and enjoy [Google Block Breaker](https://sans-simulator.github.io/)! 🎉
 
