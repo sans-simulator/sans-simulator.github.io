@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+	<link href='http://www.portoalegre.travel/upload/b/116/1167218_sans-live-wallpaper.jpg' rel='image_src'/>
+        <meta content='http://www.portoalegre.travel/upload/b/116/1167218_sans-live-wallpaper.jpg' property='og:image'/>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Bad Time Simulator (Sans Fight)</title>
+	<meta name="description" content="do you wanna have a bad time? 'cause if you visit this page... you are REALLY not going to like what happens next." />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	</head> 
+ <!-- 
+888888b.                 888      888    d8b                                     d8b          888      888   .d8888b.                   88b.  88b.   
+888  "88b                888      888    Y8P                                     Y8P          888      888  d88P  Y88b                  "Y88b "Y88b  
+888  .88P                888      888                                                         888      888       .d88P                    Y88b  Y88b 
+8888888K.   8888b.   .d88888      888888 888 88888b.d88b.   .d88b.       888d888 888  .d88b.  88888b.  888888  .d88P"       888888         888   888 
+888  "Y88b     "88b d88" 888      888    888 888 "888 "88b d8P  Y8b      888P"   888 d88P"88b 888 "88b 888     888"                        888   888 
+888    888 .d888888 888  888      888    888 888  888  888 88888888      888     888 888  888 888  888 888     888          888888        d88P  d88P 
+888   d88P 888  888 Y88b 888      Y88b.  888 888  888  888 Y8b.          888     888 Y88b 888 888  888 Y88b.                            .d88P .d88P  
+8888888P"  "Y888888  "Y88888       "Y888 888 888  888  888  "Y8888       888     888  "Y88888 888  888  "Y888  888                      88P"  88P"   
+                                                                                          888                                                        
+                                                                                     Y8b d88P                                                        
+                                                                                      "Y88P"                                                         
+-->
+<body> 
+	<div id="fb-root"></div>
+	
+	<a href="https://hotavn.ga/" class="btn btn-danger btn-lg">HotaVN</a>
+	<button type="button" class="btn btn-danger btn-lg ml-2" onclick="HowToPlay()">How to play</button>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		HowToPlay();
+
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+		function HowToPlay(){
+			$('#howtoplay').modal("show");
+		}
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="640" height="480">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+			<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/></h1>
+		</canvas>
+		
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-2.1.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		if (navigator.serviceWorker && navigator.serviceWorker.register)
+		{
+			// Register an empty service worker to trigger web app install banners.
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
+    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115050357-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115050357-1');
+</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115050357-1', 'auto');
+  ga('send', 'pageview');
+</script>	
+<audio loop autoplay>
+  <source src="https://hotamago.github.io/sans/remix.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<div class="modal fade" id="howtoplay" style="padding-right: 16px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color: black;">How to play</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="color: black;">
+	  <h5>How to have a bad time</h5>
+	  <p>
+		  [Z] - Confirm<br/>
+		  [X] - Confirm<br/>
+		  [Alt + F4] - Quit =))<br/>
+		  [F11] - Fullscreen<br/>
+		  When HP=0, you lose.
+	  </p>
+	  </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	</body> 
+</html> 
