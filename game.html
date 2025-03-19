@@ -1,8 +1,6 @@
 ﻿<!DOCTYPE html>
 <html manifest="offline.appcache">
 <head>
-	<link href='http://www.portoalegre.travel/upload/b/116/1167218_sans-live-wallpaper.jpg' rel='image_src'/>
-        <meta content='http://www.portoalegre.travel/upload/b/116/1167218_sans-live-wallpaper.jpg' property='og:image'/>
     <meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>Bad Time Simulator (Sans Fight)</title>
@@ -49,24 +47,7 @@
 <body> 
 	<div id="fb-root"></div>
 	
-	<a href="https://hotavn.ga/" class="btn btn-danger btn-lg">HotaVN</a>
-	<button type="button" class="btn btn-danger btn-lg ml-2" onclick="HowToPlay()">How to play</button>
 	
-	<script>
-	// Issue a warning if trying to preview an exported project on disk.
-	(function(){
-		HowToPlay();
-
-		// Check for running exported on file protocol
-		if (window.location.protocol.substr(0, 4) === "file")
-		{
-			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
-		}
-	})();
-		function HowToPlay(){
-			$('#howtoplay').modal("show");
-		}
-	</script>
 	
 	<!-- The canvas must be inside a div called c2canvasdiv -->
 	<div id="c2canvasdiv">
