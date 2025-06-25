@@ -52,7 +52,7 @@ This project is released under the **MIT License**.
 ## 📩 Contact
 For inquiries, suggestions, or contributions, reach out:
 - 📧 Email: contactmu97@gmail.com  
-- 🌐 Website: [Block Breaker](https://sans-simulator.github.io/)
+- 🌐 Website: [Block Breaker](https://blokbreaker.com/)
 - Also play [Doodle Cricket](https://doodlecricket.org/)
 
 🚀 Dive into the action and enjoy [Google Block Breaker](https://sans-simulator.github.io/)! 🎉
