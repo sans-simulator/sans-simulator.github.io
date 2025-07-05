@@ -8,7 +8,6 @@
     <meta name="description" content="Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle.">
     
     <meta name="keywords" content="sans simulator 2, bad time simulator, bad time simulator sans, sans simulator, bad time simulator, sans battle simulator, bad time simulator sans fight, sans fight online, sans sim, sans undertale simulator, undertale sans simulator, sans simulator game, sans simulator online, undertale sim, bad time simulator, sans undertale simulator, undertale sans simulator ,bad time simulator, sans battle simulator ,bad time sans ,sans fight simulator">
-
     <link rel="icon" type="image/png" href="/favicon.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="favicon.svg"/>
@@ -29,8 +28,8 @@
     <meta name="twitter:title" content="Sans Simulator - Play Free Sans Battle Game Online!" />
     <meta name="twitter:description" content="Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle." />
     <meta name="twitter:image" content="/favicon.svg">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -117,6 +116,71 @@
                                                                                       "Y88P"                                                         
 -->
 <body> 
+
+
+<!-- Google Font for Pixel Style -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- Game-Themed Toggle Panel -->
+<div id="menuWrapper" style="position: absolute; top: 0; left: 0; width: 100%; display: flex; justify-content: center; z-index: 1000; font-family: 'Press Start 2P', monospace;">
+
+  <!-- Panel Container -->
+  <div id="menuPanel" style="width: 94%; max-width: 1000px; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); overflow: hidden; transition: max-height 0.4s ease-in-out, padding 0.3s ease; max-height: 40px; padding: 0;">
+
+    <!-- Toggle Tab -->
+    <div id="toggleTab" style="height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: white; border-radius: 12px 12px 0 0;">
+      <span id="toggleArrow" style="font-size: 18px; color: #333; transition: transform 0.3s ease;">⌄</span>
+    </div>
+
+    <!-- Menu Links -->
+    <div id="menuContent" style="display: flex; justify-content: center; align-items: center; padding: 24px 16px; gap: 20px; flex-wrap: wrap;">
+      <a href="/about.html" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">About</a>
+      <a href="/privacy-policy" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Privacy Policy</a>
+      <a href="mailto:contactmu97@gmail.com ?subject=Bad time Simulator" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Feedback</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const panel = document.getElementById("menuPanel");
+  const toggle = document.getElementById("toggleTab");
+  const arrow = document.getElementById("toggleArrow");
+  const content = document.getElementById("menuContent");
+
+  let expanded = false;
+
+  toggle.addEventListener("click", () => {
+    if (expanded) {
+      panel.style.maxHeight = "40px";
+      panel.style.padding = "0";
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      panel.style.maxHeight = "320px";
+      panel.style.padding = "0 0 24px 0";
+      arrow.style.transform = "rotate(180deg)";
+    }
+    expanded = !expanded;
+  });
+
+  // Hover effect
+  const links = content.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+      link.style.background = "#eee";
+      link.style.transform = "translateY(-2px)";
+    });
+    link.addEventListener("mouseout", () => {
+      link.style.background = "#fff";
+      link.style.transform = "translateY(0)";
+    });
+  });
+</script>
+
+
+
+	
 	<div id="fb-root"></div>
 	
 	
