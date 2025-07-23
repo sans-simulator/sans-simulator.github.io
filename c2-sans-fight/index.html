@@ -93,6 +93,58 @@
 </head>
 
 <body>
+
+<!-- Menu Links -->
+    <div id="menuContent" style="display: flex; justify-content: center; align-items: center; padding: 24px 16px; gap: 20px; flex-wrap: wrap;">
+      <a href="/" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Home</a>	    
+      <a href="/about" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">About</a>
+      <a href="/privacy-policy" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Privacy</a>
+      <a href="/c2-sans-fight/" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Bad Time Simulator</a>
+      <a href="mailto:contactmu97@gmail.com ?subject=Bad time Simulator" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Feedback</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const panel = document.getElementById("menuPanel");
+  const toggle = document.getElementById("toggleTab");
+  const arrow = document.getElementById("toggleArrow");
+  const content = document.getElementById("menuContent");
+
+  let expanded = false;
+
+  toggle.addEventListener("click", () => {
+    if (expanded) {
+      panel.style.maxHeight = "40px";
+      panel.style.padding = "0";
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      panel.style.maxHeight = "320px";
+      panel.style.padding = "0 0 24px 0";
+      arrow.style.transform = "rotate(180deg)";
+    }
+    expanded = !expanded;
+  });
+
+  // Hover effect
+  const links = content.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+      link.style.background = "#eee";
+      link.style.transform = "translateY(-2px)";
+    });
+    link.addEventListener("mouseout", () => {
+      link.style.background = "#fff";
+      link.style.transform = "translateY(0)";
+    });
+  });
+</script>
+
+
+
+	
     <div id="fb-root"></div>
     <script>
         // Issue a warning if trying to preview an exported project on disk.
