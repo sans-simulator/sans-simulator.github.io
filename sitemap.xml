@@ -1,51 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://sans-simulator.github.io/</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/block-blast/</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/2048-cupcakes/</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/2028-taylor-swift/</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/2048-classic/</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/doge-2048</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/about</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://sans-simulator.github.io/privacy-policy</loc>
-        <lastmod>2025-03-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+<url>
+<loc>https://sans-simulator.github.io/</loc>
+<lastmod>2025-08-15T09:12:02+01:00</lastmod>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://sans-simulator.github.io/about</loc>
+<lastmod>2025-08-15T09:12:02+01:00</lastmod>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://sans-simulator.github.io/c2-sans-fight/</loc>
+<lastmod>2025-08-15T09:12:02+01:00</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://sans-simulator.github.io/unfair-undyne/</loc>
+<lastmod>2025-08-15T09:12:02+01:00</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://sans-simulator.github.io/undyne-simulator/</loc>
+<lastmod>2025-08-15T09:12:02+01:00</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://sans-simulator.github.io/privacy-policy/</loc>
+<lastmod>2025-08-15T09:12:03+01:00</lastmod>
+<priority>0.8</priority>
+</url>
 </urlset>
