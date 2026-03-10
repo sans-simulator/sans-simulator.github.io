@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
     <title>Sans Simulator - Play Bad Time Simulator Game Online Free !</title>
-    <meta name="description" content="Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle.">
+	<meta name="description" content="Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle.">
     <meta name="keywords" content="sans simulator 2, bad time simulator, bad time simulator sans, sans simulator, bad time simulator, sans battle simulator, bad time simulator sans fight, sans fight online, sans sim, sans undertale simulator, undertale sans simulator, sans simulator game, sans simulator online, undertale sim, bad time simulator, sans undertale simulator, undertale sans simulator ,bad time simulator, sans battle simulator ,bad time sans ,sans fight simulator">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="yandex-verification" content="7aab1053f53106bf" />
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
+	<meta name="yandex-verification" content="7aab1053f53106bf" />
+	
+	
     <link rel="icon" type="image/png" href="/favicon.svg" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="favicon.svg"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
     <meta name="apple-mobile-web-app-title" content="Sans Simulator" />
     <link rel="manifest" href="/site.webmanifest" />
-    <script src="/js/protection.js"></script>
+    
     <meta property="og:title" content="Sans Simulator - Play Free Sans Battle Game Online!">
     <meta property="og:description" content="Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
+    <meta property="og:url" content="https://sans-simulator.github.io/">
     <meta property="og:site_name" content="Sans Simulator - Play Free Sans Battle Game Online!">
     <meta property="og:width" content="1024">
     <meta property="og:height" content="1024">
@@ -30,12 +33,107 @@
     <meta name="twitter:image" content="/favicon.svg">
 
     <meta name="csrf-token" content="a4fLmdyUUguWYGIQoBbunTnNQNjDRPmdOGjpDQ08">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="/assets/css/vendor.min7f46.css?v1.18" rel="stylesheet">
-    <link href="/assets/css/app7f46.css?v1.18" rel="stylesheet">
+	<!-- Your custom stylesheets - MUST come before the inline override block -->
+	<link href="/assets/css/vendor.min7f46.css?v1.18" rel="stylesheet">
+	<link href="/assets/css/app7f46.css?v1.18" rel="stylesheet">
 
-    <script type="application/ld+json">
+	<!-- Apple specific meta tags -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+<style type="text/css">
+
+	/* ── SCROLL FIX ─────────────────────────────────────────── */
+	html {
+		overflow-y: scroll !important;
+		overflow-x: hidden !important;
+	}
+	body {
+		overflow-y: scroll !important;
+		overflow-x: hidden !important;
+		background: #f8f7f5;
+	}
+
+	/* ── GAME WRAPPER ───────────────────────────────────────── */
+	#game-wrapper {
+		width: 100%;
+		background: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	/* ── GAME CANVAS ────────────────────────────────────────── */
+	#c2canvasdiv {
+		width: 640px;
+		height: 480px;
+		display: block;
+		position: relative;
+		flex-shrink: 0;
+		margin: 0 auto;
+	}
+
+	/* ── CANVAS TOUCH ───────────────────────────────────────── */
+	canvas {
+		touch-action: none;
+		-ms-touch-action: none;
+		display: block;
+	}
+
+	/* ── BOOTSTRAP INTERFERENCE FIX ────────────────────────── */
+	#game-wrapper * {
+		box-sizing: border-box;
+	}
+
+	/* ── LAYOUT ─────────────────────────────────────────────── */
+	.layout-reset {
+		clear: both;
+	}
+
+	/* ── FAQ DETAILS STYLING ────────────────────────────────── */
+	.faq details {
+		background: #fff;
+		border-radius: 20px;
+		margin-bottom: 24px;
+		padding: 24px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.05);
+	}
+	.faq details summary {
+		font-weight: bold;
+		font-size: 22px;
+		cursor: pointer;
+		list-style: none;
+		color: #252a34;
+	}
+	.faq details p {
+		margin-top: 12px;
+		line-height: 1.5;
+		font-size: 18px;
+		color: #435168;
+	}
+
+</style>
+	
+	
+	
+	   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoGame",
@@ -60,7 +158,7 @@
     "name": "Sans Simulator - Play Free Sans Battle Game Online!",
     "description": "Play Sans Simulator free! Dodge attacks, unleash powerful moves, and test your skills in an intense battle.",
     "category": "Productivity",
-    "image": "/favicon.svgg",
+    "image": "/favicon.svg",
     "aggregateRating": {
         "@type": "AggregateRating",
         "worstRating": "1",
@@ -69,6 +167,207 @@
         "ratingCount": "511300"
                 }
     }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator is a fan-made game where you can fight against Sans or play as Sans in an epic battle inspired by Undertale. Dodge, attack, and survive!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I play Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use your keyboard or touch controls to move, jump, and attack. Dodge white attacks by moving and stay still for blue ones. Time your moves to win!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the game hard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Sans is fast and unpredictable, making the battle a real challenge. But with practice, you can master dodging and counterattacks!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Sans Simulator works on both PC and mobile, so you can play anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you hit Sans in the game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To hit Sans in the game, you must keep attacking, even though he dodges every move. As the battle goes on, he starts to get tired. Eventually, he will stop dodging, giving you a chance to land a hit. When he shows signs of exhaustion or falls asleep, strike quickly to finish the fight!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many attacks are there in the game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans has 24 different attacks, all inspired by his moves in Undertale. These include Strongest Move, Bone Slam, Bone Wall, Gaster Blasters, and more. The attacks are divided into two parts — the first part has 13 attacks, while the second part has 11 harder attacks that make the battle even more challenging!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who made the Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator is a fan-made game inspired by the character Sans from Undertale. Several developers have created their own versions. NekoGlass developed a version on Game Jolt, Adria Estudios created one on itch.io, and Jcw87 developed the Bad Time Simulator (Sans Fight) — one of the most popular fan-made versions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the controls for Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The controls are simple. Use the Arrow keys or WASD to move your soul and dodge attacks. Press Z or Enter to confirm selections in the menu, and press X to go back or attack during battle. On mobile, on-screen touch buttons replace the keyboard controls."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between white and blue attacks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "White attacks hurt you if you get hit, so you need to move and dodge them. Blue attacks work the opposite way — they only hurt you if you are moving when they hit. When you see blue, stop moving completely and let them pass through."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I dodge Gaster Blasters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gaster Blasters are one of Sans' most powerful attacks. The key is to watch where the blasters are aiming before they fire and position yourself in the gap between their beams. They fire in a fixed pattern, so once you learn the timing and spacing you can dodge them consistently every time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to download anything to play Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No download is needed at all. Sans Simulator runs entirely in your web browser, so you can start playing instantly just by visiting the page. It works on Chrome, Firefox, Edge, and most modern browsers on both desktop and mobile without any installation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Bad Time Simulator and how is it different from Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bad Time Simulator and Sans Simulator are often used interchangeably because they refer to the same type of fan-made experience — recreating the iconic Sans boss fight from Undertale. Bad Time Simulator is the name of the original browser version created by Jcw87. Sans Simulator is a broader term used to describe any fan-made game where you fight against or as Sans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I actually beat Sans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beating Sans requires patience more than speed. Learn his attack patterns by playing through them repeatedly — each pattern is fixed, so muscle memory helps a lot. Always save your HP items for emergencies, avoid rushing your attacks, and wait for the moment he falls asleep to land your hit. Most players take dozens of attempts before winning, so don't get discouraged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What game modes does Sans Simulator have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator includes four game modes. Normal mode is the classic balanced Sans fight. Endless mode throws continuous waves of random attacks at you to test how long you can survive. Single Attack mode lets you practice one specific attack over and over until you master it. Custom Attack mode lets you build your own challenge by selecting which attacks appear."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when I run out of HP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When your HP drops to zero, the game ends and you see a Game Over screen. You can restart immediately and try again from the beginning. There are no save points mid-battle, so each attempt is a fresh run. This is what makes the fight so rewarding when you finally survive — every win is fully earned."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sans Simulator related to the original Undertale game?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator is inspired by Undertale but is not an official part of it. It is a fan-made recreation of the Sans boss fight from the Genocide route of Undertale, created independently by fans of the game. The original Undertale was developed by Toby Fox. Sans Simulator is a tribute to that iconic battle and is not affiliated with or endorsed by the official Undertale team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Sans keep dodging all my attacks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans dodging your attacks is intentional and is one of the most iconic parts of his fight. Sans is the only enemy in the game who can actually dodge. The trick is not to find a way around it but to keep attacking anyway. Each time you attack, even if he dodges, it slowly wears him down. Eventually he gets tired and falls asleep — that is your window to land the hit that counts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to practice specific attacks before the full fight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! That is exactly what Single Attack mode is for. Instead of going through the full battle, you can select one specific attack and practice dodging it over and over until it feels natural. This is the best way to build confidence before taking on the full fight in Normal or Endless mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the game get harder the longer you play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, especially in Endless mode. As you survive longer, the attacks become faster, more complex, and harder to predict. In Normal mode the difficulty follows the fixed pattern of Sans' original fight, which naturally escalates in the second phase. The longer you last, the more demanding the game becomes — which is what keeps players coming back to improve their best run."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sans Simulator free to play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Sans Simulator is completely free to play. There are no paywalls, no sign-ups, and no hidden fees. Just open your browser, visit the page, and start playing immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What browser works best for Sans Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator works best on Google Chrome for the smoothest performance. Microsoft Edge and Mozilla Firefox also work well. For the best experience, make sure your browser is updated to the latest version and that JavaScript is enabled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play Sans Simulator on a school Chromebook?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases yes, since Sans Simulator runs directly in the browser with no downloads or installations required. As long as your Chromebook allows access to the website and has JavaScript enabled, the game should load and run without any issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a typical Sans fight last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single attempt at the Sans fight can last anywhere from a few seconds to several minutes depending on your skill level. If you survive through all his attack phases, the full fight takes around 5 to 10 minutes. Most players die many times before completing it, so the total time spent learning the fight is usually much longer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Sans Simulator work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sans Simulator is a browser-based game that generally requires an internet connection to load. However, once the game assets are cached in your browser, some versions may work offline. For the most reliable experience, playing with an active internet connection is recommended."
+      }
+    }
+  ]
+}
 </script>
 
 <!-- Google tag (gtag.js) -->
@@ -83,89 +382,100 @@
     
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1637241537344579"
      crossorigin="anonymous">
-</script>    
+</script> 
+	
 </head>
 
 <body>
+	<div id="fb-root"></div>
 
-    <!-- Google Font for Pixel Style -->
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<!-- Game-Themed Toggle Panel -->
-<div id="menuWrapper" style="position: absolute; top: 0; left: 0; width: 100%; display: flex; justify-content: center; z-index: 1000; font-family: 'Press Start 2P', monospace;">
-
-  <!-- Panel Container -->
-  <div id="menuPanel" style="width: 94%; max-width: 1000px; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); overflow: hidden; transition: max-height 0.4s ease-in-out, padding 0.3s ease; max-height: 40px; padding: 0;">
-
-    <!-- Toggle Tab -->
-    <div id="toggleTab" style="height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: white; border-radius: 12px 12px 0 0;">
-      <span id="toggleArrow" style="font-size: 18px; color: #333; transition: transform 0.3s ease;">⌄</span>
+<!-- ── GAME CANVAS ── -->
+<div id="game-wrapper">
+    <div id="c2canvasdiv">
+        <canvas id="c2canvas" width="640" height="480"></canvas>
     </div>
-
-    <!-- Menu Links -->
-    <div id="menuContent" style="display: flex; justify-content: center; align-items: center; padding: 24px 16px; gap: 20px; flex-wrap: wrap;">
-      <a href="/" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Home</a>	    
-      <a href="/about" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">About</a>
-      <a href="/privacy-policy" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Privacy</a>
-      <a href="/c2-sans-fight/" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Bad Time Simulator</a>
-      <a href="mailto:contactmu97@gmail.com ?subject=Bad time Simulator" style="color: #000; text-decoration: none; padding: 12px 18px; border-radius: 6px; background: #fff; box-shadow: 2px 2px 0 #000; font-size: 12px; transition: all 0.3s;">Feedback</a>
-    </div>
-
-  </div>
 </div>
 
-<!-- Script -->
-<script>
-  const panel = document.getElementById("menuPanel");
-  const toggle = document.getElementById("toggleTab");
-  const arrow = document.getElementById("toggleArrow");
-  const content = document.getElementById("menuContent");
+	<!-- Construct 2 runtime scripts -->
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="c2runtime.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			cr_createRuntime("c2canvas");
+		});
 
-  let expanded = false;
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		}
 
-  toggle.addEventListener("click", () => {
-    if (expanded) {
-      panel.style.maxHeight = "40px";
-      panel.style.padding = "0";
-      arrow.style.transform = "rotate(0deg)";
-    } else {
-      panel.style.maxHeight = "320px";
-      panel.style.padding = "0 0 24px 0";
-      arrow.style.transform = "rotate(180deg)";
-    }
-    expanded = !expanded;
-  });
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
 
-  // Hover effect
-  const links = content.querySelectorAll("a");
-  links.forEach(link => {
-    link.addEventListener("mouseover", () => {
-      link.style.background = "#eee";
-      link.style.transform = "translateY(-2px)";
-    });
-    link.addEventListener("mouseout", () => {
-      link.style.background = "#fff";
-      link.style.transform = "translateY(0)";
-    });
-  });
-</script>
-    
-        <div class="wrapper__content">
-        <section class="game" id="game">
-                <iframe id="iframehtml5" width="100%" height="900" frameborder="0" border="0" scrolling="no" class="iframe-default" allowfullscreen="true" src="/game"></iframe>
-        </section>
+		if (navigator.serviceWorker && navigator.serviceWorker.register) {
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
 
+		// SMART ARROW KEY FIX:
+		// Block arrow/space keys from scrolling the page ONLY when the game
+		// canvas is still visible in the viewport. Once the user scrolls past
+		// the game, arrow keys work normally for page scrolling.
+		var gameKeys = [32, 37, 38, 39, 40, 33, 34]; // Space, Arrows, PgUp, PgDn
 
+		function isGameVisible() {
+			var canvas = document.getElementById("c2canvasdiv");
+			if (!canvas) return false;
+			var rect = canvas.getBoundingClientRect();
+			// Game is "active" if any part of it is still visible on screen
+			return rect.bottom > 0 && rect.top < window.innerHeight;
+		}
 
-        <link rel="stylesheet" href="/styles/mainae52.css?v=5">
+		window.addEventListener("keydown", function(e) {
+			if (gameKeys.indexOf(e.keyCode) !== -1 && isGameVisible()) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+	</script>
 
-        <!--Play other games -->
+	<audio loop autoplay>
+		<source src="/remix.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	</div><!-- /#game-wrapper -->
+
+	<!-- ══════════════════════════════════════════════ -->
+	<!-- ── ALL CONTENT BELOW THE GAME STARTS HERE ── -->
+	<!-- ══════════════════════════════════════════════ -->
+
+	<div class="layout-reset"></div>
+	
+	<!--Play other games -->
         <section class="other-games section-indent" id="other-games" style="padding-top:0;">
             <div class="container">
-                <div class="description__body">
-                    <h2 class="section-heading__title">🎮 Play More Games 🎮</h2>
-                </div>
                 <div class="other-games__wrapper">
+                    <a href="https://sans-simulator.github.io/unfair-undyne/" class="other-games__item" target="_blank">
+                        <picture class="other-games__img">
+                            <img src="/unfair-undyne.png" alt="Unfair Undyne">
+                        </picture>
+                        <div class="other-games__body">
+                            <span class="other-games__title">Unfair Undyne</span>
+                            <span class="other-games__description">Play Unfair Undyne game online</span>
+                        </div>
+                    </a>
+                    <a href="https://sans-simulator.github.io/undyne-simulator/" class="other-games__item" target="_blank">
+                        <picture class="other-games__img">
+                            <img src="/undyne-simulator.webp" alt="undyne simulator">
+                        </picture>
+                        <div class="other-games__body">
+                            <span class="other-games__title">Undyne Simulator</span>
+                            <span class="other-games__description">Play Undyne Simulator game free online</span>
+                        </div>
+                    </a>
                     <a href="https://doodlecricket.org/" class="other-games__item" target="_blank">
                         <picture class="other-games__img">
                             <img src="/doodle-cricket.png" alt="doodle cricket">
@@ -213,31 +523,12 @@
                             <span class="other-games__description">Play Doodle Pacman game online</span>
                         </div>
                     </a>
-                    <a href="https://sans-simulator.github.io/unfair-undyne/" class="other-games__item" target="_blank">
-                        <picture class="other-games__img">
-                            <img src="/unfair-undyne.png" alt="Unfair Undyne">
-                        </picture>
-                        <div class="other-games__body">
-                            <span class="other-games__title">Unfair Undyne</span>
-                            <span class="other-games__description">Play Unfair Undyne game online</span>
-                        </div>
-                    </a>
-                    <a href="https://sans-simulator.github.io/undyne-simulator/" class="other-games__item" target="_blank">
-                        <picture class="other-games__img">
-                            <img src="/undyne-simulator.webp" alt="undyne simulator">
-                        </picture>
-                        <div class="other-games__body">
-                            <span class="other-games__title">Undyne Simulator</span>
-                            <span class="other-games__description">Play Undyne Simulator game free online</span>
-                        </div>
-                    </a>
                 </div>
             </div>
         </section>
         <!-- end of other games -->    
 
-        
-        <!-- description -->
+	<!-- description -->
         <section class="description section-indent-sm" id="description">
             <div class="container">
                 <div class="description__wrapper">
@@ -267,9 +558,8 @@
             </div>
         </section>
         <!-- end of description -->
-
         
- <!-- Rating Section -->
+        <!-- Rating Section -->
 <section class="rating section-indent" id="rating">
     <div class="container">
         <div class="section-heading" style="background: #fff2cb;">
@@ -370,11 +660,10 @@ document.addEventListener("DOMContentLoaded", function () {
     background-size: cover;
 }
 </style>
-        
-        <!-- end of rating -->
-        
+<!-- end of rating -->
 
-        <!-- how to play -->
+
+<!-- how to play -->
         <section class="how-to section-indent" id="how-to">
             <div class="container">
                 <div class="section-heading" style="background: #f5ecd1;">
@@ -398,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="how-to__elem">
                             <h3 class="how-to__title">Move And Attack</h3>
                             <div class="how-to__content">
-                                <p class="how-to__description">Left and right arrow keys provide along with your mouse precise control of paddle movement. The position of the paddle determines how the ball moves after impact thus skilled players can aim specific shots with accuracy. Your successful play depends on perfect timing because losing control of the ball results in a life removal.</p>
+                                <p class="how-to__description">Use the Arrow keys or WASD to move your soul and dodge Sans' attacks. White attacks must be dodged by moving, while blue attacks require you to stand completely still. Your survival depends on reading each pattern quickly and reacting at the right moment.</p>
                                 <picture class="how-to__img">
                                     <img src="/assets/img/move-and-attack.png"
                                          alt="Move And Attack"
@@ -424,210 +713,198 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </section>
         <!-- end of how to play -->
-
-           <!-- Include Rubik Font -->
-
-
-
-
-            
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
-
-<section class="" id="" style="font-family: 'Rubik', sans-serif; padding: 40px 20px; max-width: 960px; margin: auto;">
+        
+        
+        <!-- Start of About -->
+<section class="section-indent" id="about">
     <div class="container">
-        <div class="section-heading" style="background: #fff2cb;">
-            <h2 class="section-heading__title">🎮 About the Sans Simulator</h2>
+        <div class="section-heading" style="background: #dbe2f0;">
+            <h2 class="section-heading__title">About Sans Simulator</h2>
+        </div>
+        <div class="section-inner__content content">
+
+            <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 15px;">How I Found and Built This Game</h3>
+            <p>Inspired by the legendary Sans fight from Undertale — an emotional, intense, and unforgettable boss battle — I explored many versions of Sans Undertale simulator games online, but most were buggy or unpolished. That's when I decided to build my own: a smooth, browser-ready bad time Sans experience anyone can enjoy. I designed modes like Normal, Endless, Single, and Custom Attack to help players train and master the <a href="/" target="_blank">Sans simulator</a>.</p>
+
+            <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 15px;">What Makes This Sans Simulator Special?</h3>
+                <ul>
+                       <li>Fast performance with no lag.</li>
+                       <li>Works instantly in browser (no download).</li>
+                       <li>Multiple game modes to test your skills.</li>
+                       <li>Pixel-style retro look that matches Undertale’s world.</li>
+                       <li>Fun for both new players and hardcore fans.</li>
+                </ul>
+
+            <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 15px;">Pro Tips to Win the Sans Fight</h3>
+            <p>Winning the Sans fight comes down to one thing above all else: dodging. Your timing is everything, so take time to study each attack pattern before rushing in. Use "Single Attack" mode to practice one pattern at a time, and challenge yourself in "Endless Mode" to sharpen your reflexes over time.</p>
+
+            <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 15px;">Game Modes Explained</h3>
+            <p>Sans Simulator offers four distinct modes to suit every play style. Normal mode delivers a balanced and authentic Sans fight. Endless mode puts you through wave after wave of random attacks to test your endurance. Single Attack mode lets you practice one move repeatedly until you've mastered it. Finally, Custom Attack mode lets you set your own challenge and push your reflexes to the limit.</p>
+
+        </div>
+    </div>
+</section>
+<!-- end of About -->
+        
+        
+
+        
+<!-- Controls / Tips -->
+<section class="tips section-indent" id="tips">
+	<div class="container">
+		<div class="section-heading" style="background: #f6eaed;">
+			<h2 class="section-heading__title">How to Control the Sans Simulator Game?</h2>
+		</div>
+		<div class="tips__wrapper">
+			<article class="tips__item">
+				<picture class="tips__img">
+					<img src="/assets/img/tip-01.svg" alt="Move in the Menu" title="Move in the Menu">
+				</picture>
+				<div class="tips__body">
+					<h3 class="tips__title">Move in the Menu</h3>
+					<p class="tips__description">Use the Up and Down arrow keys to navigate through the menu. When you find the option you want, press <b>Enter</b> or <b>Z</b> to select it and begin your battle.</p>
+				</div>
+			</article>
+			<article class="tips__item">
+				<picture class="tips__img">
+					<img src="/assets/img/tip-02.svg" alt="Go Back" title="Go Back">
+				</picture>
+				<div class="tips__body">
+					<h3 class="tips__title">Go Back</h3>
+					<p class="tips__description">If you want to change your selection or return to a previous menu, press <b>X</b>. This lets you reselect your options before starting the fight.</p>
+				</div>
+			</article>
+			<article class="tips__item">
+				<picture class="tips__img">
+					<img src="/assets/img/tip-03.svg" alt="Move in Battle" title="Move in Battle">
+				</picture>
+				<div class="tips__body">
+					<h3 class="tips__title">Move in Battle</h3>
+					<p class="tips__description">Use the <b>Arrow keys</b> or WASD to control your heart (soul) and dodge Sans' attacks. Avoid bones, beams, and obstacles by moving at the right time.</p>
+				</div>
+			</article>
+			<article class="tips__item">
+				<picture class="tips__img">
+					<img src="/assets/img/tip-04.svg" alt="Attack" title="Attack">
+				</picture>
+				<div class="tips__body">
+					<h3 class="tips__title">Attack</h3>
+					<p class="tips__description">Press <b>X</b> to attack when it's your turn. Keep dodging and timing your moves carefully to survive the battle and defeat your opponent!</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+
+
+<!-- faq -->
+<section class="faq section-indent" id="faq">
+    <div class="container">
+        <div class="section-heading" style="background: #efe7f7;">
+            <h2 class="section-heading__title">(FAQ) Frequently Asked Questions</h2>
         </div>
 
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What is Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans Simulator is a fan-made game where you can fight against Sans or play as Sans in an epic battle inspired by Undertale. Dodge, attack, and survive!</p>
+        </details>
 
-  <!-- History Card -->
-  <div style="background: #fff; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.05); padding: 30px; margin-bottom: 30px;">
-    <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 15px;">📖 How I Found and Built This Game</h3>
-    <ul style="list-style: none; padding-left: 0; color: #444; font-size: 18px; line-height: 1.8;">
-      <li>➤ I was inspired by the legendary <strong>Sans fight</strong> from Undertale — an emotional, intense, and unforgettable boss battle.</li>
-      <li>➤ I explored many versions of <strong>Sans Undertale simulator</strong> games online, but most were buggy or unpolished.</li>
-      <li>➤ That’s when I decided to build my own version — a smooth, browser-ready <strong>bad time Sans</strong> experience that anyone can enjoy.</li>
-      <li>➤ I designed modes like Normal, Endless, Single, and Custom Attack to help players train, survive, and master the <strong>Sans battle simulator</strong>.</li>
-    </ul>
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">How do I play Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Use your keyboard or touch controls to move, jump, and attack. Dodge white attacks by moving and stay still for blue ones. Time your moves to win!</p>
+        </details>
 
-  <!-- Features Card -->
-  <div style="background: #f9f9ff; border-left: 5px solid #6C63FF; border-radius: 20px; padding: 25px 30px; margin-bottom: 30px;">
-    <h3 style="font-size: 22px; font-weight: 600; color: #333; margin-bottom: 10px;">🚀 What Makes This Sans Simulator Special?</h3>
-    <ul style="list-style: none; padding-left: 0; font-size: 18px; color: #444; line-height: 1.7;">
-      <li>✔️ Fast performance with no lag</li>
-      <li>✔️ Works instantly in browser (no download)</li>
-      <li>✔️ Multiple game modes to test your skills</li>
-      <li>✔️ Pixel-style retro look that matches Undertale’s world</li>
-      <li>✔️ Fun for both new players and hardcore fans</li>
-    </ul>
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Is the game hard?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Yes! Sans is fast and unpredictable, making the battle a real challenge. But with practice, you can master dodging and counterattacks!</p>
+        </details>
 
-  <!-- Tips Card -->
-  <div style="background: #fff; border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); padding: 30px; margin-bottom: 30px;">
-    <h3 style="font-size: 22px; font-weight: 600; color: #111; margin-bottom: 10px;">🎯 Pro Tips to Win the Sans Fight</h3>
-    <ul style="list-style: none; padding-left: 0; color: #444; font-size: 18px;">
-      <li>🟣 Focus on dodging – your timing is everything.</li>
-      <li>🟣 Study each attack pattern before rushing in.</li>
-      <li>🟣 Use “Single Attack” mode to practice one pattern.</li>
-      <li>🟣 Challenge yourself in “Endless Mode” to build reflexes.</li>
-    </ul>
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Can I play on mobile?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Yes! Sans Simulator works on both PC and mobile, so you can play anywhere.</p>
+        </details>
 
-  <!-- Modes Card -->
-  <div style="background: #fff0f6; border-left: 5px solid #ff4d88; border-radius: 20px; padding: 25px 30px; margin-bottom: 30px;">
-    <h3 style="font-size: 22px; font-weight: 600; color: #cc0066; margin-bottom: 10px;">🎮 Game Modes Explained</h3>
-    <ul style="padding-left: 0; font-size: 18px; color: #444;">
-      <li><strong>🕹️ Normal:</strong> Balanced and authentic Sans fight.</li>
-      <li><strong>🌀 Endless:</strong> Survive wave after wave of random attacks.</li>
-      <li><strong>🎯 Single Attack:</strong> Practice one move repeatedly.</li>
-      <li><strong>⚙️ Custom Attack:</strong> Set your own challenge and test reflexes.</li>
-    </ul>
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">How do you hit Sans in the game?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">To hit Sans in the game, you must keep attacking, even though he dodges every move. As the battle goes on, he starts to get tired. Eventually, he will stop dodging, giving you a chance to land a hit. When he shows signs of exhaustion or falls asleep, strike quickly to finish the fight!</p>
+        </details>
 
-  <!-- Keywords Optimized Block -->
-  <div style="display: none;">
-    bad time simulator, sans undertale simulator, undertale sans simulator, bad time sans, sans battle simulator, sans fight simulator
-  </div>
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">How many attacks are there in the game?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans has 24 different attacks, all inspired by his moves in Undertale. These include Strongest Move, Bone Slam, Bone Wall, Gaster Blasters, and more. The attacks are divided into two parts — the first part has 13 attacks, while the second part has 11 harder attacks that make the battle even more challenging!</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Who made the Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans Simulator is a fan-made game inspired by the character Sans from Undertale. Several developers have created their own versions. NekoGlass developed a version on Game Jolt, Adria Estudios created one on itch.io, and Jcw87 developed the Bad Time Simulator (Sans Fight) — one of the most popular fan-made versions.</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What are the controls for Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">The controls are simple. Use the Arrow keys or WASD to move your soul and dodge attacks. Press Z or Enter to confirm selections in the menu, and press X to go back or attack during battle. On mobile, on-screen touch buttons replace the keyboard controls.</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What is the difference between white and blue attacks?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">This is one of the most important mechanics in the game. White attacks hurt you if you get hit, so you need to move and dodge them. Blue attacks work the opposite way — they only hurt you if you are moving when they hit. When you see blue, stop moving completely and let them pass through.</p>
+        </details>
 
-        <!-- faq -->
-        <section class="faq section-indent" id="faq">
-            <div class="container">
-                <div class="section-heading" style="background: #efe7f7;">
-                    <h2 class="section-heading__title">FAQ</h2>
-                </div>
-                <div class="faq__wrapper">
-                    <div class="accordeon faq__item is--open">
-                        <h3 class="accordeon__trigger">What is Sans Simulator?</h3>
-                        <div class="accordeon__wrapper" style="display: block;">
-                            <div class="accordeon__content">
-Sans Simulator is a fan-made game where you can fight against Sans or play as Sans in an epic battle inspired by Undertale. Dodge, attack, and survive!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">How do I play Sans Simulator?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Use your keyboard or touch controls to move, jump, and attack. Dodge white attacks by moving and stay still for blue ones. Time your moves to win!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">Is the game hard?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Yes! Sans is fast and unpredictable, making the battle a real challenge. But with practice, you can master dodging and counterattacks!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">Can I play on mobile?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Yes! Sans Simulator works on both PC and mobile, so you can play anywhere.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger"> Is it free?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Yes! Most Sans Simulator games are free to play online—just jump in and start battling!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">How do you hit Sans in the game?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                To hit Sans in the game, you must keep attacking, even though he dodges every move. As the battle goes on, he starts to get tired. Eventually, he will stop dodging, giving you a chance to land a hit. When he shows signs of exhaustion or falls asleep, strike quickly to finish the fight!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">How many attacks are there in the game?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Sans has 24 different attacks, all inspired by his moves in Undertale. These include Strongest Move, Bone Slam, Bone Wall, Gaster Blasters, and more. The attacks are divided into two parts—the first part has 13 attacks, while the second part has 11 harder attacks that make the battle even more challenging!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordeon faq__item">
-                        <h3 class="accordeon__trigger">Who made the Sans Simulator?</h3>
-                        <div class="accordeon__wrapper">
-                            <div class="accordeon__content">
-                                Sans Simulator is a fan-made game inspired by the character Sans from Undertale. Several developers have created their own versions of Sans Simulator. For instance, NekoGlass developed a version available on Game Jolt. Another version, titled Sans Simulator, was created by Adria Estudios and is accessible on itch.io. Additionally, Jcw87 developed the Bad Time Simulator (Sans Fight), which is another popular fan-made game inspired by Sans
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of faq -->
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">How do I dodge Gaster Blasters?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Gaster Blasters are one of Sans' most powerful attacks and many players struggle with them at first. The key is to watch where the blasters are aiming before they fire and position yourself in the gap between their beams. They fire in a fixed pattern, so once you learn the timing and spacing you can dodge them consistently every time.</p>
+        </details>
 
-        <!-- tips -->
-        <section class="tips section-indent" id="tips">
-            <div class="container">
-                <div class="section-heading" style="background: #f6eaed;">
-                    <h2 class="section-heading__title">How to Control the Sans Simulator Game?</h2>
-                </div>
-                <div class="tips__wrapper">
-                    <article class="tips__item">
-                        <picture class="tips__img">
-                            <img src="/assets/img/tip-01.svg" alt="Move in the Menu"
-                                 title="Move in the Menu">
-                        </picture>
-                        <div class="tips__body">
-                            <h3 class="tips__title">Move in the Menu</h3>
-                            <p class="tips__description">Use the Up and Down arrow keys to navigate through the menu. When you find the option you want, <b>press Enter</b> or <b>Z</b> to select it and begin your battle.</p>
-                        </div>
-                    </article>
-                    <article class="tips__item">
-                        <picture class="tips__img">
-                            <img src="/assets/img/tip-02.svg" alt="Go Back"
-                                 title="Go Back">
-                        </picture>
-                        <div class="tips__body">
-                            <h3 class="tips__title">Go Back</h3>
-                            <p class="tips__description">If you want to change your selection or return to a previous menu, press <b>X</b>. This lets you reselect your options before starting the fight.</p>
-                        </div>
-                    </article>
-                    <article class="tips__item">
-                        <picture class="tips__img">
-                            <img src="/assets/img/tip-03.svg" alt="Move in Battle"
-                                 title="Move in Battle">
-                        </picture>
-                        <div class="tips__body">
-                            <h3 class="tips__title">Move in Battle</h3>
-                            <p class="tips__description">Use the <b>Arrow keys</b> or WASD to control your heart (soul) and dodge Sans attacks. Avoid bones, beams, and obstacles by moving at the right time.</p>
-                        </div>
-                    </article>
-                    <article class="tips__item">
-                        <picture class="tips__img">
-                            <img src="/assets/img/tip-04.svg" alt="Attack "
-                                 title="Attack">
-                        </picture>
-                        <div class="tips__body">
-                            <h3 class="tips__title">Attack</h3>
-                            <p class="tips__description">Press <b>X</b> to attack when its your turn. Keep dodging and timing your moves carefully to survive the battle and defeat your opponent!</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of tips -->
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Do I need to download anything to play Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">No download is needed at all. Sans Simulator runs entirely in your web browser, so you can start playing instantly just by visiting the page. It works on Chrome, Firefox, Edge, and most modern browsers on both desktop and mobile without any installation.</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What is the Bad Time Simulator and how is it different from Sans Simulator?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Bad Time Simulator and Sans Simulator are often used interchangeably because they refer to the same type of fan-made experience — recreating the iconic Sans boss fight from Undertale. Bad Time Simulator is the name of the original browser version created by Jcw87. Sans Simulator is a broader term used to describe any fan-made game where you fight against or as Sans.</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">How do I actually beat Sans?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Beating Sans requires patience more than speed. Learn his attack patterns by playing through them repeatedly — each pattern is fixed, so muscle memory helps a lot. Always save your HP items for emergencies, avoid rushing your attacks, and wait for the moment he falls asleep to land your hit. Most players take dozens of attempts before winning, so don't get discouraged.</p>
+        </details>
 
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What game modes does Sans Simulator have?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans Simulator includes four game modes. Normal mode is the classic balanced Sans fight. Endless mode throws continuous waves of random attacks at you to test how long you can survive. Single Attack mode lets you practice one specific attack over and over until you master it. Custom Attack mode lets you build your own challenge by selecting which attacks appear.</p>
+        </details>
+
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">What happens when I run out of HP?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">When your HP drops to zero, the game ends and you see a Game Over screen. You can restart immediately and try again from the beginning. There are no save points mid-battle, so each attempt is a fresh run. This is what makes the fight so rewarding when you finally survive — every win is fully earned.</p>
+        </details>
+
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Is Sans Simulator related to the original Undertale game?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans Simulator is inspired by Undertale but is not an official part of it. It is a fan-made recreation of the Sans boss fight from the Genocide route of Undertale, created independently by fans of the game. The original Undertale was developed by Toby Fox. Sans Simulator is a tribute to that iconic battle and is not affiliated with or endorsed by the official Undertale team.</p>
+        </details>
+
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Why does Sans keep dodging all my attacks?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Sans dodging your attacks is intentional and is one of the most iconic parts of his fight. In the game's story, Sans is the only enemy who can actually dodge. The trick is not to find a way around it but to keep attacking anyway. Each time you attack, even if he dodges, it slowly wears him down. Eventually he gets tired and falls asleep — that is your window to land the hit that counts.</p>
+        </details>
+
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Is there a way to practice specific attacks before the full fight?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Yes! That is exactly what Single Attack mode is for. Instead of going through the full battle, you can select one specific attack and practice dodging it over and over until it feels natural. This is the best way to build confidence before taking on the full fight in Normal or Endless mode.</p>
+        </details>
+
+        <details style="background: #fff; border-left: 4px solid #fff; border-radius: 15px; margin-bottom: 25px; padding: 20px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <summary style="font-weight: bold; font-size: 22px; cursor: pointer; list-style: none;">Does the game get harder the longer you play?</summary>
+            <p style="margin-top: 18px; line-height: 1.6; font-size: 18px;">Yes, especially in Endless mode. As you survive longer, the attacks become faster, more complex, and harder to predict. In Normal mode the difficulty follows the fixed pattern of Sans' original fight, which naturally escalates in the second phase. The longer you last, the more demanding the game becomes — which is what keeps players coming back to improve their best run.</p>
+        </details>
 
     </div>
+</section>
+<!-- end of faq -->
 
-        <footer class="footer" id="footer">
+	<!-- Footer -->
+	<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__inner">
@@ -637,29 +914,22 @@ Sans Simulator is a fan-made game where you can fight against Sans or play as Sa
                 <p class="footer__copyright"><a href="/">Sans Simulator</a> @2025 All rights reserved</p>
             </div>
             <ul class="footer__list">
-                                <li class="footer__item">
-                </li>
                 <li class="footer__item">
                     <a href="/about" class="footer__link">About</a>
                 </li>
                 <li class="footer__item">
-                    <a href="mailto:contactmu97@gmail.com ?subject=Block Breaker" class="footer__link">Feedback</a>
+                    <a href="mailto:contactmu97@gmail.com?subject=Sans%20Simulator" class="footer__link">Feedback</a>
                 </li>
                 <li class="footer__item">
                     <a href="/privacy-policy" class="footer__link">Privacy Policy</a>
                 </li>
                 <li class="footer__item">
-                    <a href="https://askmidinsurance.org/" class="footer__link">askMID Insurance</a>
+                    <a href="https://doodlecricket.org" class="footer__link">Doodle Cricket</a>
                 </li>
             </ul>
         </div>
     </div>
-</footer> 
+</footer>
 
-    <script src="/assets/js/vendor.min7f46.js?v1.18"></script>
-    <script src="/assets/js/app7f46.js?v1.18"></script>
-
-
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl476824'},{'dcenter':'sg2'},{'cp_id':'9878709'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504715'},{'dcenter':'p3'},{'cp_id':'9937115'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>    
-</body></html>
+</body>
+</html>
