@@ -52,7 +52,7 @@ This project is released under the **MIT License**.
 ## 📩 Contact
 For inquiries, suggestions, or contributions, reach out:
 - 📧 Email: contactmu97@gmail.com  
-- 🌐 Website: [Block Breaker](https://blokbreaker.com/)
+- 🌐 Website: [handwriting repeater](https://www.handwritingrepeater.org)
 - Also play [Doodle Cricket](https://doodlecricket.org/)
 
 🚀 Dive into the action and enjoy [bad time trio simulator](https://sans-simulator.github.io/)! 🎉
